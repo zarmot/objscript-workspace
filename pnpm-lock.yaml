@@ -6,13 +6,19 @@ settings:
 
 dependencies:
   adata:
-    specifier: 0.150.0
-    version: 0.150.0
+    specifier: 0.301.0
+    version: 0.301.0
+  ws:
+    specifier: ^8.13.0
+    version: 8.13.0
 
 devDependencies:
   '@types/node':
     specifier: ^20.4.1
     version: 20.4.5
+  '@types/ws':
+    specifier: ^8.5.5
+    version: 8.5.5
   typescript:
     specifier: ^5.1.6
     version: 5.1.6
@@ -23,13 +29,14 @@ packages:
     resolution: {integrity: sha512-rt40Nk13II9JwQBdeYqmbn2Q6IVTA5uPhvSO+JVqdXw/6/4glI6oR9ezty/A9Hg5u7JH4OmYmuQ+XvjKm0Datg==}
     dev: true
 
-  /adata@0.150.0:
-    resolution: {integrity: sha512-y+n48tlcoqda/J+kM/LtINbYX7o+69IW0Xu/3rYp9HyprEU1JJpwETNfyi7rrnKkOGL/leBY4TgfP/0SQkgS7A==}
+  /@types/ws@8.5.5:
+    resolution: {integrity: sha512-lwhs8hktwxSjf9UaZ9tG5M03PGogvFaH8gUgLNbN9HKIg0dvv6q+gkSuJ8HN4/VbyxkuLzCjlN7GquQ0gUJfIg==}
     dependencies:
-      ws: 8.13.0
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
+      '@types/node': 20.4.5
+    dev: true
+
+  /adata@0.301.0:
+    resolution: {integrity: sha512-WZxPjSee4sROreB4B/u5DnG3q/dKHC00O5t+fKnHK3H5mAlJCDz6jB0HtwcdxQTi9yJ0Otrr/D+iHb4ruTiTDQ==}
     dev: false
 
   /typescript@5.1.6:

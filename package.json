@@ -7,10 +7,12 @@
     "dev": "tsc -w"
   },
   "dependencies": {
-    "adata": "0.150.0"
+    "adata": "0.301.0",
+    "ws": "^8.13.0"
   },
   "devDependencies": {
     "@types/node": "^20.4.1",
+    "@types/ws": "^8.5.5",
     "typescript": "^5.1.6"
   }
 }
