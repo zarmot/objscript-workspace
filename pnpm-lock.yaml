@@ -5,9 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  adata:
-    specifier: 0.301.0
-    version: 0.301.0
+  '@objscript/core':
+    specifier: 0.500.0
+    version: 0.500.0
+  '@objscript/schema':
+    specifier: 0.500.0
+    version: 0.500.0
   ws:
     specifier: ^8.13.0
     version: 8.13.0
@@ -25,6 +28,17 @@ devDependencies:
 
 packages:
 
+  /@objscript/core@0.500.0:
+    resolution: {integrity: sha512-+IXaNIBRlxS+n7f0Tc9zb1pXG+q88wBQl4uy5gKewnqvPdLn3AqNxKff51TXZSq6/p4K6JGRiKQThx5lNo8MBQ==}
+    dev: false
+
+  /@objscript/schema@0.500.0:
+    resolution: {integrity: sha512-KKva30K+Y0bMYf8J34/6mqVnZO82YqiLu4G4u12DqjppsEo+uQcPUARSykC8m4iy0Pe1BX+hDYOQxt9zLj0AVw==}
+    hasBin: true
+    dependencies:
+      '@objscript/core': link:../core
+    dev: false
+
   /@types/node@20.4.5:
     resolution: {integrity: sha512-rt40Nk13II9JwQBdeYqmbn2Q6IVTA5uPhvSO+JVqdXw/6/4glI6oR9ezty/A9Hg5u7JH4OmYmuQ+XvjKm0Datg==}
     dev: true
@@ -34,10 +48,6 @@ packages:
     dependencies:
       '@types/node': 20.4.5
     dev: true
-
-  /adata@0.301.0:
-    resolution: {integrity: sha512-WZxPjSee4sROreB4B/u5DnG3q/dKHC00O5t+fKnHK3H5mAlJCDz6jB0HtwcdxQTi9yJ0Otrr/D+iHb4ruTiTDQ==}
-    dev: false
 
   /typescript@5.1.6:
     resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
